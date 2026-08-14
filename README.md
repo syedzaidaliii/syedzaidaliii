@@ -48,4 +48,4 @@ Small Wonders Senior Secondary School, Jabalpur — 2022
 
 Email: syedzaidali004@gmail.com
 LinkedIn: [https://www.linkedin.com/in/syedzaidaliii/]
-GitHub: [[add your GitHub URL here](https://github.com/syedzaidaliii/)]
+GitHub: [(https://github.com/syedzaidaliii/)]
