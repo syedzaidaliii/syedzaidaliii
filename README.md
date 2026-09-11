@@ -26,7 +26,7 @@ Based in Jabalpur, India. Currently looking for AI Engineer or Data Science role
 A multi-agent RAG system built with LangChain and OpenAI models that automates research workflows — web search, scraping, and retrieval feeding into report generation. The part I spent the most time on was the evaluation layer: checking generated answers against retrieved sources for groundedness and catching hallucinations before they made it into a final report.
 
 **You-Can't-Fool-Me: Deepfake Detection System**
-A deepfake classifier built on EfficientNet-B0 with transfer learning. Landed at 94.6% validation accuracy and a 93.9% F1-score. The main challenge was overfitting on a fairly limited dataset, which I worked around with dropout, batch normalization, and careful fine-tuning.
+Developed a resource-efficient deepfake image detection system using CLIP ViT-B/16 with parameter-efficient fine-tuning (PEFT). Compared BCE, Focal Loss, ArcFace, and Evidential Deep Learning (EDL) using cached image embeddings, achieving 0.998 AUC and 0.95 MCC on a 3,212-image test set. Evaluated model differences using McNemar’s test, bootstrap confidence intervals, calibration (ECE), and sharpness-based robustness analysis, and deployed the system using FastAPI, React, and Docker.
 
 **Anomaly Detection System**
 Anomaly detection on a time-series dataset with 1.6M+ records and severe class imbalance. Engineered 130+ features and built ensemble models with LightGBM and XGBoost, then spent a good chunk of time on threshold optimization to get the F1-score up to 0.82 — accuracy alone was meaningless given how imbalanced the classes were.
