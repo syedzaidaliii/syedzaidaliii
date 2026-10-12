@@ -22,8 +22,12 @@ Based in Jabalpur, India. Currently looking for AI Engineer or Data Science role
 
 ## Projects
 
-**RAG-based Multi-Agent Research Assistant**
-A multi-agent RAG system built with LangChain and OpenAI models that automates research workflows — web search, scraping, and retrieval feeding into report generation. The part I spent the most time on was the evaluation layer: checking generated answers against retrieved sources for groundedness and catching hallucinations before they made it into a final report.
+**ResearchMind: Multi-Agent Research System**
+Built a four-stage multi-agent pipeline that turns any topic into a structured report: search agent, page-scraping
+agent, report writer, and a critic that scores the output out of 10. Created tool-using LangChain agents with Tavily search and a BeautifulSoup scraper, running entirely on free-tier Gemini and Tavily APIs. Fixed a reliability bug where the model answered from memory without searching, by verifying the search tool
+was called, retrying once, and failing safely with a clear error. Developed a Streamlit app with a live progress tracker, tabbed results, Markdown export, and rate-limit error
+handling.
+
 
 **You-Can't-Fool-Me: Deepfake Detection System**
 Developed a resource-efficient deepfake image detection system using CLIP ViT-B/16 with parameter-efficient fine-tuning (PEFT). Compared BCE, Focal Loss, ArcFace, and Evidential Deep Learning (EDL) using cached image embeddings, achieving 0.998 AUC and 0.95 MCC on a 3,212-image test set. Evaluated model differences using McNemar’s test, bootstrap confidence intervals, calibration (ECE), and sharpness-based robustness analysis, and deployed the system using FastAPI, React, and Docker.
