@@ -30,7 +30,7 @@ handling.
 
 
 **You-Can't-Fool-Me: Deepfake Detection System**
-Developed a resource-efficient deepfake image detection system using CLIP ViT-B/16 with parameter-efficient fine-tuning (PEFT). Compared BCE, Focal Loss, ArcFace, and Evidential Deep Learning (EDL) using cached image embeddings, achieving 0.998 AUC and 0.95 MCC on a 3,212-image test set. Evaluated model differences using McNemar’s test, bootstrap confidence intervals, calibration (ECE), and sharpness-based robustness analysis, and deployed the system using FastAPI, React, and Docker.
+Developed an AI-powered deepfake detection system using EfficientNetV2B3 and TensorFlow/Keras to classify face images as real or fake. Trained on the DF40 dataset, the model leverages transfer learning to generate predictions with confidence scores. Built an interactive Streamlit web application for image-based detection and evaluated model performance using accuracy, precision, recall, F1-score, and a confusion matrix. Tech Stack: Python, TensorFlow, Keras, EfficientNetV2B3, Streamlit, NumPy, Scikit-learn.
 
 **Anomaly Detection System**
 Anomaly detection on a time-series dataset with 1.6M+ records and severe class imbalance. Engineered 130+ features and built ensemble models with LightGBM and XGBoost, then spent a good chunk of time on threshold optimization to get the F1-score up to 0.82 — accuracy alone was meaningless given how imbalanced the classes were.
